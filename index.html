@@ -35,6 +35,7 @@
 							<!-- <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> -->
 							<li class="nav-item active"><a class="nav-link" href="#About_me">About Me</a></li>
 							<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+							<li class="nav-item"><a class="nav-link" href="#check_cc_id">Check Credit Card ID</a></li>
 						</ul>
 					</div>
 				</div>
@@ -181,6 +182,16 @@
 						<p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization</p>
 					</div>
 				</div>
+				<div class="col-lg-10 col-md-8 offset-lg-1 offset-md-2" id="check_cc_id">
+					<div class="feature_item" >
+						<img src="img/services/s3.png" alt="">
+						<h4>Check Your Credit Card ID here</h4>
+						<input type="text" name="credit_Card_ID" id="user_cc_id" onsubmit="Check_cc_id()" style="margin-bottom: 20px;">
+						<br>
+						<button class="primary_btn" onclick="Check_cc_id()"><span>Submit</span></button>
+						<h5 id="Answer" style="margin-top: 20px;color:red" ></h5>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -283,7 +294,8 @@
 	</section>
 	<!--================End Portfolio Area =================-->
     
-    <!-- Optional JavaScript -->
+	<!-- Optional JavaScript -->
+	<script src="index.js"></script>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.js"></script>
@@ -300,5 +312,6 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
+	
 </body>
 </html>
