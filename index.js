@@ -20,20 +20,19 @@ function Check_cc_id() {
       }
     }
   }
-  console.log(cc_id)
-  sum = 0
-  for(x=0;x<cc_id.length;x++){
-      if(Number.isNaN(parseInt(cc_id[x])) == false){
-        sum += parseInt(cc_id[x])
-      }
-      
+  console.log(cc_id);
+  sum = 0;
+  for (x = 0; x < cc_id.length; x++) {
+    if (Number.isNaN(parseInt(cc_id[x])) == false) {
+      sum += parseInt(cc_id[x]);
+    }
   }
-  console.log(sum)
-  if(sum == 0){
-    answer.innerHTML = "Humm this is not a credit card id"
-  }else if(sum %10==0){
-      answer.innerHTML = "Valid"
-  }else{
-    answer.innerHTML = "Not Valid"
+  console.log(sum);
+  if (sum == 0) {
+    answer.innerHTML = "Humm this is not a credit card id";
+  } else if (sum % 10 == 0) {
+    answer.innerHTML = "Valid";
+  } else {
+    answer.innerHTML = "Not Valid";
   }
 }
